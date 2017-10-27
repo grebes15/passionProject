@@ -20,8 +20,8 @@ require "sinatra/reloader" if development?
 
 require 'erb'
 
-require 'pry'
-require 'pry-byebug'
+require 'pry' if development?
+require 'pry-byebug' if development?
 
 require 'net/http'
 

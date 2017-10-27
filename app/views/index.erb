@@ -1,2 +1,31 @@
-<% uri = URI('https://data.cityofnewyork.us/resource/dr4a-dx5a.json') %>
-<%= Net::HTTP.get(uri) %>
+<h1> Directory Of Tennis Courts With Online Registration </h1>
+
+<!-- <form method="GET" action="https://data.cityofnewyork.us/resource/dr4a-dx5a.json">
+  <input type="text" name="Location" placeholder="Locaiton">
+  <input type="submit" name="Get Information about Location">
+</form>
+ -->
+
+ <form method='GET' action='/location'>
+  <input type='text' name='locations' >
+  <input type='submit'>
+ </form>
+
+
+<h3> Possible Locations to Search </h3>
+<ul>
+  <li>Alley Pond Park, Queens</li>
+  <li>Bensonhurst Park, Brooklyn</li>
+  <li>Central Park, Manhattan</li>
+  <li>Cunningham Park, Queens</li>
+  <li>East River Park, Manhattan</li>
+  <li>Flushing Meadows Corona Park, Queens</li>
+  <li>McCarren Park, Brooklyn</li>
+  <li>Mill Pond Park, Bronx</li>
+  <li>Prospect Park, Brooklyn</li>
+  <li>Randall's Island Park, Manhattan</li>
+  <li>Riverside Park (119th), Manhattan</li>
+  <li>Riverside Park (96th), Manhattan</li>
+</ul>
+
+

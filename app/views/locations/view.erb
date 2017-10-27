@@ -1,0 +1,8 @@
+<h1> Additional Information for <%= @location %></h1>
+<% @locations.each do |location| %>
+  First Reservation: <%= location["first_reservation"] %> <br>
+  Last Reservation: <%= location["last_reservation"] %> <br>
+  Location: <%= location["location"] %> <br>
+  Reservation Courts: <%= location["reservation_courts"] %> <br>
+  Walk On Courts: <%= location["walk_on_courts"] %>
+<% end %>
